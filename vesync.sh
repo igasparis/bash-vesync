@@ -68,7 +68,7 @@ if [ "$LOGIN" -eq "1" ]; then
 fi
 
 
-([[ -z "$TOKEN" ]] || [[ -z "DEVICE_ID" ]] || [[ -z "$ID" ]] || [[ -z "$ACTION" ]]) && usage
+([[ -z "$TOKEN" ]] || [[ -z "$DEVICE_ID" ]] || [[ -z "$ID" ]] || [[ -z "$ACTION" ]]) && usage
 BODY="{\"cid\":\"${DEVICE_ID}\",\"uri\":\"\/relay\",\"action\":";
 
 if [ "$ACTION" == "on" ]; then
